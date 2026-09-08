@@ -153,7 +153,7 @@ figcaption {
   color: var(--muted);
 }
 
-.gallery, .cards, .split {
+.gallery, .cards, .split, .recipes {
   display: grid;
   gap: 1.4rem;
   padding: 0 1.5rem 3.5rem;
@@ -183,9 +183,23 @@ p { margin: 0; line-height: 1.5; color: var(--muted); }
 
 .panel[hidden] { display: none; }
 
+.recipes article ul {
+  margin: 0.7rem 0 0.8rem;
+  padding-left: 1.1rem;
+  color: var(--ink);
+}
+.serves {
+  margin-top: 0.25rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 @media (min-width: 800px) {
   .gallery { grid-template-columns: 1fr 1fr; }
   .gallery figure:last-child { grid-column: 1 / -1; }
   .cards { grid-template-columns: repeat(3, 1fr); }
+  .recipes { grid-template-columns: 1fr 1fr; }
   .split { grid-template-columns: 1.1fr 0.9fr; align-items: stretch; }
 }
