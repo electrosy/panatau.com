@@ -4,36 +4,132 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Panatau — Romania</title>
-  <meta name="description" content="Pictures of Romania." />
+  <meta name="description" content="Pictures, history, a small store, and maps of Romania." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="dress" aria-hidden="true">
+    <img src="images/ornament-band.png" alt="" />
+  </div>
   <header class="top">
     <p class="mark">panatau</p>
+    <nav class="tabs" aria-label="Sections">
+      <button type="button" data-tab="pictures" class="is-on">Pictures</button>
+      <button type="button" data-tab="history">History</button>
+      <button type="button" data-tab="store">Store</button>
+      <button type="button" data-tab="maps">Maps</button>
+    </nav>
+    <div class="themes" role="group" aria-label="Themes">
+      <button type="button" data-theme="voronet" class="swatch is-on" title="Voroneț">Voroneț</button>
+      <button type="button" data-theme="dusk" class="swatch" title="Carpathian dusk">Dusk</button>
+      <button type="button" data-theme="folk" class="swatch" title="Folk cloth">Folk</button>
+      <button type="button" data-theme="wood" class="swatch" title="Maramureș wood">Wood</button>
+    </div>
   </header>
+
   <main>
-    <section class="intro">
-      <h1>Romania</h1>
-      <p class="lede">Pictures, not a catalog.</p>
+    <section id="pictures" class="panel is-on">
+      <div class="intro">
+        <h1>Romania</h1>
+        <p class="lede">Pictures, not a catalog.</p>
+      </div>
+      <figure class="hero">
+        <img src="images/carpathians.png" alt="Carpathian ridge and a still lake at dusk" />
+        <figcaption>Carpathians</figcaption>
+      </figure>
+      <section class="gallery">
+        <figure>
+          <img src="images/painted-monastery.png" alt="Painted monastery wall in late light" />
+          <figcaption>Painted monastery</figcaption>
+        </figure>
+        <figure>
+          <img src="images/maramures.png" alt="Wooden church and carved gate in morning mist" />
+          <figcaption>Maramureș</figcaption>
+        </figure>
+        <figure>
+          <img src="images/sighisoara.png" alt="Quiet cobbled street toward a clock tower" />
+          <figcaption>Sighișoara</figcaption>
+        </figure>
+      </section>
     </section>
-    <figure class="hero">
-      <img src="images/carpathians.png" alt="Carpathian ridge and a still lake at dusk" />
-      <figcaption>Carpathians</figcaption>
-    </figure>
-    <section class="gallery">
-      <figure>
-        <img src="images/painted-monastery.png" alt="Painted monastery wall in late light" />
-        <figcaption>Painted monastery</figcaption>
+
+    <section id="history" class="panel" hidden>
+      <div class="intro">
+        <h1>History</h1>
+        <p class="lede">A few rooms, not a textbook.</p>
+      </div>
+      <figure class="hero">
+        <img src="images/history-fortress.png" alt="Imagined fortress on a ridge at dusk, a rider small on the road" />
+        <figcaption>Imagined art — a ridge fortress</figcaption>
       </figure>
-      <figure>
-        <img src="images/maramures.png" alt="Wooden church and carved gate in morning mist" />
-        <figcaption>Maramureș</figcaption>
+      <div class="cards">
+        <article>
+          <h2>Dacia, then Rome</h2>
+          <p>The mountains were a kingdom before they were a province. Trajan’s campaigns left roads, forts, and a Latin that never fully left the language.</p>
+        </article>
+        <article>
+          <h2>Principalities</h2>
+          <p>Wallachia, Moldavia, and Transylvania spent centuries between empires. The painted churches and wooden gates are what that pressure left standing.</p>
+        </article>
+        <article>
+          <h2>Union, then the century</h2>
+          <p>The modern state is young next to the ridges. What the pictures hold is older than any one border: church, gate, street, high water.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="store" class="panel" hidden>
+      <div class="intro">
+        <h1>Store</h1>
+        <p class="lede">A table, not a checkout. Nothing here is for sale yet.</p>
+      </div>
+      <div class="split">
+        <figure>
+          <img src="images/store-still-life.png" alt="Imagined still life of a painted cup, embroidered cloth, herbs, and a brass key" />
+          <figcaption>Imagined art — the shop table</figcaption>
+        </figure>
+        <div class="cards">
+          <article>
+            <h2>Painted cup</h2>
+            <p>Blue flowers on cream. The kind of cup that stays on the table after the tea is gone.</p>
+          </article>
+          <article>
+            <h2>Embroidered cloth</h2>
+            <p>A short scarf with a folk band. Fringe, a little wear, made to be used.</p>
+          </article>
+          <article>
+            <h2>Brass key</h2>
+            <p>Not a product. A placeholder, until there is a real object and a real price.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="maps" class="panel" hidden>
+      <div class="intro">
+        <h1>Maps</h1>
+        <p class="lede">An imagined atlas plate. Not for navigation.</p>
+      </div>
+      <figure class="hero map">
+        <img src="images/imagined-map.png" alt="Imagined hand-drawn map of Romania with mountains, rivers, and a compass rose" />
+        <figcaption>Imagined art — country plate</figcaption>
       </figure>
-      <figure>
-        <img src="images/sighisoara.png" alt="Quiet cobbled street toward a clock tower" />
-        <figcaption>Sighișoara</figcaption>
-      </figure>
+      <div class="cards">
+        <article>
+          <h2>The arc</h2>
+          <p>The Carpathians bend through the middle. Almost every picture on this site sits on one side of that arc or the other.</p>
+        </article>
+        <article>
+          <h2>The river</h2>
+          <p>The Danube is the southern edge, then the delta. The sea is a small blue corner on the plate.</p>
+        </article>
+        <article>
+          <h2>How to read it</h2>
+          <p>No city names on purpose. It is dressing for the place, not a route.</p>
+        </article>
+      </div>
     </section>
   </main>
+  <script src="site.js"></script>
 </body>
 </html>
