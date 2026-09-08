@@ -1,0 +1,61 @@
+:root {
+  color-scheme: light dark;
+  --bg: #0f1419;
+  --fg: #f4f1ea;
+  --muted: #9aa3ad;
+  --accent: #7dd3c0;
+  --card: #1a222c;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(ellipse at top, #1c2a33 0%, transparent 55%),
+    var(--bg);
+  color: var(--fg);
+}
+
+.shell {
+  width: min(36rem, calc(100% - 2.5rem));
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+  border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  letter-spacing: -0.03em;
+}
+
+.lede {
+  margin: 0 0 1.75rem;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--fg) 86%, var(--muted));
+}
+
+.meta {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
