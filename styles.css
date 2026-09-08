@@ -196,10 +196,17 @@ p { margin: 0; line-height: 1.5; color: var(--muted); }
   text-transform: uppercase;
 }
 
+.lessons { grid-template-columns: 1fr; }
+.lessons article { max-width: 46rem; }
+.maps { padding-top: 0.4rem; }
+.words h2 { font-family: Georgia, serif; letter-spacing: 0; text-transform: none; font-size: 1.6rem; }
+
 @media (min-width: 800px) {
   .gallery { grid-template-columns: 1fr 1fr; }
   .gallery figure:last-child { grid-column: 1 / -1; }
   .cards { grid-template-columns: repeat(3, 1fr); }
   .recipes { grid-template-columns: 1fr 1fr; }
+  .lessons { grid-template-columns: 1fr; }
+  .words { grid-template-columns: 1fr 1fr; }
   .split { grid-template-columns: 1.1fr 0.9fr; align-items: stretch; }
 }
