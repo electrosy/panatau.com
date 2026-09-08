@@ -1,6 +1,6 @@
-# panatu.com
+# panatau.com
 
-Starter site for [panatu.com](https://panatu.com).
+Starter site for [panatau.com](https://panatau.com).
 
 ## Local preview
 
@@ -12,10 +12,8 @@ python3 -m http.server 8080
 
 Then visit http://localhost:8080
 
-## Deploy (AWS later)
+## Deploy
 
-This is a static site (`index.html`, `styles.css`). Build output is the repo root — suitable for S3 + CloudFront or Amplify Hosting.
+Static site (`index.html`, `styles.css`). GitHub Pages is configured for the custom domain `panatau.com`.
 
-## Status
-
-Domain currently points at a parked IONOS page. Point DNS at AWS once hosting is ready.
+DNS for panatau.com currently points at AWS (`54.201.151.36`). Point it at GitHub Pages, or deploy this site to that AWS target instead.
