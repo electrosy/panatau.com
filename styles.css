@@ -242,3 +242,8 @@ a.mark { color: inherit; text-decoration: none; }
 .lesson .lede { color: var(--muted); }
 .lesson .hero { padding: 0 0 1.2rem; }
 .more a { color: var(--accent); }
+
+.wordlist { list-style: none; padding: 0; margin: 1rem 0 2rem; display: grid; gap: 0.35rem 1.2rem; }
+.wordlist li { color: var(--muted); }
+.wordlist span { color: var(--ink); font-family: Georgia, serif; margin-right: 0.45rem; }
+@media (min-width: 700px) { .wordlist { grid-template-columns: 1fr 1fr; } }
