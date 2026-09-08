@@ -43,7 +43,7 @@
   theme(saved);
 
   var hash = (location.hash || "").replace("#", "");
-  if (["pictures", "history", "store", "maps"].indexOf(hash) !== -1) {
+  if (["pictures", "history", "store", "maps", "recipes"].indexOf(hash) !== -1) {
     show(hash);
   }
 })();
