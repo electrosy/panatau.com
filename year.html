@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The year — Panatau</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .seasons {
+      list-style: none;
+      margin: 0 0 1.6rem;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0.55rem;
+    }
+    .seasons a {
+      font-family: system-ui, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.35rem 0.7rem;
+      background: var(--bg-2);
+    }
+    .seasons a:hover { color: var(--ink); border-color: var(--accent); }
+  </style>
 </head>
 <body>
   <div class="dress" aria-hidden="true"><img src="images/ornament-band.png" alt="" /></div>
@@ -23,18 +46,49 @@
   <main class="lesson">
     <p class="crumb"><a href="index.html">Home</a></p>
     <h1>The year</h1>
-    <p class="lede">How the calendar sits on the table, in the church, and in the handwork. Fixed days are given as the country keeps them now. Easter moves.</p>
-    <h2>Winter</h2>
-    <p>The year in the house starts at Christmas, not in the ledger. December 25 is Christmas. The fast before it is the harder half of the month. January 1 is Saint Basil, and the new year is eaten as much as counted. January 6 is Boboteaza, the blessing of water. In villages the priest still walks to wells and doors. The food of this stretch is pork if a pig was killed, cabbage, bread, and what was put up in autumn. Mămăligă does not care what month it is.</p>
-    <h2>Late winter, then the first flower</h2>
+    <p class="lede">How the calendar sits on the table, in the church, and in the handwork. Fixed days are given as the country keeps them now. Easter moves, and so do the feasts that hang from it. This is cultural memory, not a parish rulebook — for belief and saints, see <a href="orthodoxy.html">Orthodoxy</a>.</p>
+
+    <ul class="seasons" aria-label="Seasons of the year">
+      <li><a href="#winter">Winter</a></li>
+      <li><a href="#late-winter">Late winter</a></li>
+      <li><a href="#spring">Spring</a></li>
+      <li><a href="#summer">Summer</a></li>
+      <li><a href="#autumn">Autumn</a></li>
+      <li><a href="#fasts">Fasts</a></li>
+      <li><a href="#table">The table</a></li>
+    </ul>
+
+    <h2 id="winter">Winter — from Nicolae to Boboteaza</h2>
+    <p>The year in the house starts at Christmas, not in the ledger. December 6 is Sfântul Nicolae: boots by the door, a small gift for children, and in older talk a day for travelers and the poor. The Christmas fast — Postul Crăciunului — has already begun in mid-November; the harder half is December, when the house holds back meat and dairy on the days it keeps, and the kitchen works with beans, cabbage, fish if there is any, and bread.</p>
+    <p>December 25 is Crăciun. Carolers, colindători, still walk some streets. The table opens again: pork if a pig was killed for the household, cabbage, cozonac if the dough rose, and what autumn put in jars. Mămăligă does not care what month it is. Children who still play in the yard or on packed snow find the same games as always — hide-and-seek, a slide behind the house — see <a href="games.html">games</a>.</p>
+    <p>January 1 is Sfântul Vasile. The new year is eaten as much as counted: a rich table, wishes, and in some places the plough carol, plugul, or a short visit with good words for the house. January 6 is Boboteaza, Theophany, the blessing of water. In villages the priest still walks to wells and doors; people take blessed water home. The cold stretch after Christmas is short on daylight and long on what the cellar and the stove can do. Daily life in that season still turns on the stove and the good room — see <a href="house.html">the house</a>.</p>
+
+    <h2 id="late-winter">Late winter, then the first flower</h2>
     <p>February 24 is Dragobete, a day for pairing and for the first birds. It is not Valentine’s Day with a different name, though towns now sell it that way. March 1 is Mărțișor: a red and white thread, pinned on, worn until a tree flowers. The thread is small. The point is that winter is being argued with.</p>
-    <h2>Spring and the moving feast</h2>
-    <p>Easter is the high hinge. The date moves with the moon, and it does not always match the Western date. Before it, the long fast. Eggs are dyed, and in Bucovina drawn with wax. Lamb or a simpler soup, cozonac if the house can manage the dough, and the greeting Hristos a înviat. April 23 is Saint George, when the year outside the house is said to open. After Easter the table loosens. Green onion, radish, and fresh cheese.</p>
-    <h2>Summer</h2>
-    <p>Work is outside. The church year is quieter except for village feasts, hramuri, when a church keeps its own saint and the village eats in the yard. Tomatoes are worth eating. The sea at Constanța is a summer road, not a winter one. August 15 is the Dormition of Mary, a major feast, and a day a lot of people still travel to a monastery even if they do not go the rest of the year.</p>
-    <h2>Autumn</h2>
-    <p>October 14 is Saint Parascheva. Iași fills. October 26 is Saint Demetrius, the other hinge, when animals come down from the high grass and the year turns toward the pot. November 30 is Saint Andrew, kept as a patron of the country. Then the Christmas fast begins again in the middle of November, and the cloth work comes back inside.</p>
-    <p>Nothing on this page is a full ritual. It is the order of the year, so the recipes, the eggs, and the saints have a season to stand in.</p>
+
+    <h2 id="spring">Spring — Blagoveștenia, Postul Mare, Paște</h2>
+    <p>March 25 is Blagoveștenia, the Annunciation: fixed on the civil calendar, often falling inside the long fast before Easter. It is kept as a bright day in a hard season — Mary receiving the word — and many tables ease a little even when the fast around it holds.</p>
+    <p>Easter, Paște, is the high hinge. The date moves with the moon and the church’s reckoning, and it does not always match the Western date. Before it comes Postul Mare, Great Lent: roughly seven weeks of stricter days, with Holy Week at the end. Exact civil dates change every year; what stays is the shape — a long preparation, then the night and morning of the Resurrection. Eggs are dyed, and in Bucovina drawn with wax; that craft has its own page under <a href="crafts.html">crafts</a>. Lamb or a simpler soup, cozonac if the house can manage the dough, red eggs on the table, and the greeting <em>Hristos a înviat</em> — Christ is risen — answered <em>Adevărat a înviat</em>.</p>
+    <p>April 23 is Sfântul Gheorghe, when the year outside the house is said to open: flocks, green grass, the first real work in the field. After Easter the table loosens. Green onion, radish, and fresh cheese.</p>
+    <p>Forty days after Easter comes Înălțarea, the Ascension — a movable feast, often overlapping with Heroes’ Day remembrance in the modern calendar. Fifty days after Easter are Rusalii, Pentecost: the Descent of the Holy Spirit, another movable hinge, and in folk talk also a threshold day for the warm season and for what grows outside the fence.</p>
+
+    <h2 id="summer">Summer — hramuri, Sânziene, Adormirea</h2>
+    <p>Work is outside. The church year is quieter except for village feasts, hramuri, when a church keeps its own saint and the village eats in the yard. Tomatoes are worth eating. The sea at Constanța is a summer road, not a winter one.</p>
+    <p>Around Midsummer, June 24, Sânziene sits on the calendar: Midsummer herbs, yellow flowers, and older night customs that villages remember differently. The church also keeps the Nativity of John the Baptist near that date. Speak of it lightly; it is folk and feast at once, not a single script.</p>
+    <p>August 15 is Adormirea Maicii Domnului, the Dormition of Mary — a major feast, and a day a lot of people still travel to a monastery even if they do not go the rest of the year. Before it, a two-week fast, Postul Adormirii, short and sharp in the heat.</p>
+
+    <h2 id="autumn">Autumn — harvest, Parascheva, the turn toward winter</h2>
+    <p>Harvest fills the cellar: onions, jars, wine where the vines run, and the last green from the garden. The house turns inward again; cloth work comes back to the lamp.</p>
+    <p>October 14 is Sfânta Parascheva. Iași fills with pilgrims. She is kept as a saint of the house and of hard weeks; the gathering around her relics is one of the largest in the country. October 26 is Sfântul Dimitrie, the other hinge, when animals come down from the high grass and the year turns toward the pot. November 8 is the Synaxis of the Archangels in many calendars; November 30 is Sfântul Andrei, kept as a patron of the country. Then the Christmas fast begins again in the middle of November — usually November 15 — and winter’s longer evenings start before the snow does.</p>
+
+    <h2 id="fasts">Fasts, said plainly</h2>
+    <p>The big fasts are seasons, not one meal skipped. Postul Crăciunului runs from mid-November to Christmas. Postul Mare is the long spring fast before Paște; its start and end move with Easter every year, so civil dates are not fixed on this page. Postul Sfinților Apostoli (Peter and Paul) follows after Rusalii and ends near the end of June — length changes with Easter. Postul Adormirii is the two weeks before August 15. Many households also keep Wednesdays and Fridays through the year. Practice varies by person, parish, and health; nothing here tells anyone what they must do. It only names the shape people still recognize when they talk about the year. Belief and icons are on the <a href="orthodoxy.html">Orthodoxy</a> page.</p>
+
+    <h2 id="table">The table — Sunday, colivă, colaci</h2>
+    <p>Sunday is still the day’s name for a fuller table when the house can manage it: a soup, a roast or a stew, bread, something sweet if there is time. Guests sit in the good room; everyday life stays by the stove — again <a href="house.html">the house</a>.</p>
+    <p>Colivă is boiled wheat, sweetened and often decorated, brought for memorial days and for certain feasts of the dead. It is food offered in remembrance, shared after a service or at home, not a party dish. Colaci are ritual breads — twisted or round loaves — for weddings, funerals, christenings, and for taking to church. People bring what the occasion asks: wine, oil, bread, a candle, sometimes fruit. Keep the picture short and respectful: the table marks the living and the dead in the same year, without needing a full rite written down here.</p>
+
+    <p>Nothing on this page is a full ritual. It is the order of the year, so the recipes, the eggs, the saints, and the rooms of the house have a season to stand in.</p>
   </main>
 </body>
 </html>
