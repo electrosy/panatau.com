@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Țară țară vrem ostași — Panatau</title>
+  <meta name="description" content="A short team-call game: name a child, then resolve the capture with a simple duel." />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="play.css" />
+</head>
+<body>
+  <div class="dress" aria-hidden="true"><img src="../images/ornament-band.png" alt="" /></div>
+  <header class="top">
+    <a class="mark" href="../index.html">panatau</a>
+    <img class="flag" src="../images/romanian-flag.png" alt="Romanian flag" />
+    <nav class="tabs" aria-label="Sections">
+      <a href="../index.html#words">Words</a>
+      <a href="../stories.html">Stories</a>
+      <a href="../orthodoxy.html">Orthodoxy</a>
+      <a href="../crafts.html">Crafts</a>
+      <a href="../music.html">Music</a>
+      <a href="../house.html">The house</a>
+      <a href="../games.html" class="is-on" aria-current="page">Games</a>
+      <a href="../market.html">The market</a>
+      <a href="../index.html#history">History</a>
+      <a href="../timeline.html">Timeline</a>
+      <a href="../women.html">Women</a>
+      <a href="../men.html">Men</a>
+      <a href="../quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <main class="lesson">
+    <p class="crumb"><a href="../games.html">Games</a></p>
+    <h1>Țară, țară, vrem ostași</h1>
+    <p class="play-note">Browser play — not the real yard game.</p>
+    <div class="play-shell" id="tara">
+      <p class="play-hint" style="margin-top:0">In the yard, linked arms decide who joins which side. Here a short duel stands in for that break.</p>
+      <div class="play-hud">
+        <span>Turn: <strong id="turn">Țara</strong></span>
+        <span>Round: <strong id="round">1</strong></span>
+      </div>
+      <div class="tara-board">
+        <div class="tara-team" id="team-tara">
+          <h3>Țara</h3>
+          <div class="tara-roster" id="roster-tara"></div>
+        </div>
+        <div class="tara-team" id="team-ostasi">
+          <h3>Ostași</h3>
+          <div class="tara-roster" id="roster-ostasi"></div>
+        </div>
+      </div>
+      <div class="tara-duel" id="duel" hidden>
+        <p class="play-status" id="callout" role="status"></p>
+        <div class="tara-rps" id="rps" role="group" aria-label="Choose rock, paper, or scissors">
+          <button type="button" class="play-btn secondary" data-choice="rock">Rock</button>
+          <button type="button" class="play-btn secondary" data-choice="paper">Paper</button>
+          <button type="button" class="play-btn secondary" data-choice="scissors">Scissors</button>
+        </div>
+        <div class="tara-meter-wrap">
+          <label for="strength" class="play-hint">Or tug: set strength, then pull</label>
+          <input class="tara-meter" id="strength" type="range" min="0" max="100" value="50" />
+          <div class="play-actions">
+            <button type="button" class="play-btn" id="pull">Pull</button>
+          </div>
+        </div>
+      </div>
+      <p class="play-status" id="status" role="status">Țara calls first — pick a name from the other line.</p>
+      <div class="play-actions">
+        <button type="button" class="play-btn" id="restart">Restart</button>
+      </div>
+    </div>
+  </main>
+  <script src="tara.js"></script>
+</body>
+</html>
