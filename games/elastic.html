@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elasticul — Panatau</title>
+  <meta name="description" content="A timing jump over the elastic band: ankle, knee, then waist." />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="play.css" />
+</head>
+<body>
+  <div class="dress" aria-hidden="true"><img src="../images/ornament-band.png" alt="" /></div>
+  <header class="top">
+    <a class="mark" href="../index.html">panatau</a>
+    <img class="flag" src="../images/romanian-flag.png" alt="Romanian flag" />
+    <nav class="tabs" aria-label="Sections">
+      <a href="../index.html#words">Words</a>
+      <a href="../stories.html">Stories</a>
+      <a href="../orthodoxy.html">Orthodoxy</a>
+      <a href="../crafts.html">Crafts</a>
+      <a href="../music.html">Music</a>
+      <a href="../house.html">The house</a>
+      <a href="../games.html" class="is-on" aria-current="page">Games</a>
+      <a href="../market.html">The market</a>
+      <a href="../index.html#history">History</a>
+      <a href="../timeline.html">Timeline</a>
+      <a href="../women.html">Women</a>
+      <a href="../men.html">Men</a>
+      <a href="../quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <main class="lesson">
+    <p class="crumb"><a href="../games.html">Games</a></p>
+    <h1>Elasticul</h1>
+    <p class="play-note">Browser play — not the real yard game.</p>
+    <div class="play-shell" id="elastic">
+      <div class="play-hud">
+        <span>Streak: <strong id="streak">0</strong></span>
+        <span>Level clears: <strong id="clears">0</strong> / 3</span>
+      </div>
+      <div class="elastic-stage" id="stage" aria-label="Elastic jump stage">
+        <div class="elastic-holder left" aria-hidden="true"></div>
+        <div class="elastic-holder right" aria-hidden="true"></div>
+        <div class="elastic-band" id="band" aria-hidden="true"></div>
+        <div class="elastic-jumper" id="jumper" aria-hidden="true"></div>
+      </div>
+      <div class="elastic-levels" id="levels" aria-label="Height levels">
+        <span data-level="ankle" class="is-on">Ankle</span>
+        <span data-level="knee">Knee</span>
+        <span data-level="waist">Waist</span>
+      </div>
+      <p class="play-status" id="status" role="status">Tap or press Space when the band is low enough to clear.</p>
+      <p class="play-hint">The band rises and falls. Jump as it nears the bottom of the current height. Three clears raise the level.</p>
+      <div class="play-actions">
+        <button type="button" class="play-btn" id="jump">Jump</button>
+        <button type="button" class="play-btn secondary" id="restart">Restart</button>
+      </div>
+    </div>
+  </main>
+  <script src="elastic.js"></script>
+</body>
+</html>
