@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hide and seek — Panatau</title>
+  <meta name="description" content="A short browser hide-and-seek: search yard spots before your looks run out." />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="play.css" />
+</head>
+<body>
+  <div class="dress" aria-hidden="true"><img src="../images/ornament-band.png" alt="" /></div>
+  <header class="top">
+    <a class="mark" href="../index.html">panatau</a>
+    <img class="flag" src="../images/romanian-flag.png" alt="Romanian flag" />
+    <nav class="tabs" aria-label="Sections">
+      <a href="../index.html#words">Words</a>
+      <a href="../stories.html">Stories</a>
+      <a href="../orthodoxy.html">Orthodoxy</a>
+      <a href="../crafts.html">Crafts</a>
+      <a href="../music.html">Music</a>
+      <a href="../house.html">The house</a>
+      <a href="../games.html" class="is-on" aria-current="page">Games</a>
+      <a href="../market.html">The market</a>
+      <a href="../index.html#history">History</a>
+      <a href="../timeline.html">Timeline</a>
+      <a href="../women.html">Women</a>
+      <a href="../men.html">Men</a>
+      <a href="../quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <main class="lesson">
+    <p class="crumb"><a href="../games.html">Games</a></p>
+    <h1>De-a v-ați ascunselea</h1>
+    <p class="play-note">Browser play — not the real yard game.</p>
+    <div class="play-shell" id="hide">
+      <div class="play-hud">
+        <span>Looks left: <strong id="looks">4</strong></span>
+        <span>Round: <strong id="round">1</strong></span>
+      </div>
+      <div class="hide-yard" id="yard" role="group" aria-label="Yard hiding spots"></div>
+      <p class="play-status" id="status" role="status">Someone is hiding. Pick a spot to look.</p>
+      <p class="play-hint">Four looks. Find the child before you run out.</p>
+      <div class="play-actions">
+        <button type="button" class="play-btn" id="restart">Play again</button>
+      </div>
+    </div>
+  </main>
+  <script src="hide.js"></script>
+</body>
+</html>
