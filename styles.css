@@ -336,7 +336,7 @@ a.mark { color: inherit; text-decoration: none; }
 }
 .timeline li {
   position: relative;
-  margin: 0 0 1.35rem;
+  margin: 0 0 1.55rem;
   padding: 0 0 0 1.15rem;
 }
 .timeline li::before {
@@ -358,5 +358,9 @@ a.mark { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   color: var(--muted);
 }
-.timeline p { margin: 0 0 0.35rem; }
+.timeline p {
+  margin: 0 0 0.45rem;
+  line-height: 1.55;
+  max-width: 42rem;
+}
 .timeline a { color: var(--accent); }
