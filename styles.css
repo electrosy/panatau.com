@@ -327,3 +327,36 @@ a.mark { color: inherit; text-decoration: none; }
   font-size: 1.35rem;
   color: var(--ink);
 }
+
+.timeline {
+  list-style: none;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  border-left: 2px solid var(--line);
+}
+.timeline li {
+  position: relative;
+  margin: 0 0 1.35rem;
+  padding: 0 0 0 1.15rem;
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -0.4rem;
+  top: 0.45rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+}
+.timeline .when {
+  margin: 0 0 0.35rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.timeline p { margin: 0 0 0.35rem; }
+.timeline a { color: var(--accent); }
