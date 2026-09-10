@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suggest — Panatau</title>
+  <meta name="description" content="Send an idea for panatau.com. It emails Steven. Name and email are optional." />
+  <link rel="canonical" href="https://panatau.com/suggest.html" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="dress" aria-hidden="true"><img src="images/ornament-band.png" alt="" /></div>
+  <header class="top">
+    <a class="mark" href="index.html">panatau</a>
+    <img class="flag" src="images/romanian-flag.png" alt="Romanian flag" />
+    <nav class="tabs" aria-label="Sections">
+      <a href="index.html#words">Words</a>
+      <a href="stories.html">Stories</a>
+      <a href="orthodoxy.html">Orthodoxy</a>
+      <a href="crafts.html">Crafts</a>
+      <a href="music.html">Music</a>
+      <a href="house.html">The house</a>
+      <a href="well.html">The well</a>
+      <a href="wooden-churches.html">Wooden churches</a>
+      <a href="villages.html">Villages</a>
+      <a href="north.html">North</a>
+      <a href="games.html">Games</a>
+      <a href="market.html">The market</a>
+      <a href="rivers.html">Rivers</a>
+      <a href="sea.html">The sea</a>
+      <a href="harvest.html">Harvest</a>
+      <a href="winter.html">Winter</a>
+      <a href="wildlife.html">Wildlife</a>
+      <a href="year.html">The year</a>
+      <a href="index.html#history">History</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="borders.html">Borders</a>
+      <a href="wardrobe.html">Wardrobe</a>
+      <a href="women.html">Women</a>
+      <a href="men.html">Men</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="suggest.html" class="is-on" aria-current="page">Suggest</a>
+    </nav>
+  </header>
+  <main class="lesson suggest-page">
+    <p class="crumb"><a href="index.html">Home</a></p>
+    <h1>Suggest</h1>
+    <p class="lede">Send an idea for panatau.com. It emails Steven. Name and email are optional. A public list of Later and Pending ideas will sit on the <a href="suggestions.html">board</a> later.</p>
+
+    <div id="thanks" class="thanks" hidden>
+      <strong>Thanks</strong>
+      Suggestion sent. You can send another below anytime.
+    </div>
+
+    <form class="suggest-form" action="https://formsubmit.co/steven@coloritcompany.com" method="POST">
+      <input type="hidden" name="_subject" value="[Panatau suggestion]" />
+      <input type="hidden" name="_cc" value="heysteve5@gmail.com" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://panatau.com/suggest.html?sent=1" />
+      <input type="hidden" name="_template" value="table" />
+      <input class="honey" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+
+      <label for="suggestion">Suggestion
+        <textarea id="suggestion" name="suggestion" required placeholder="What should the site have, change, or fix?"></textarea>
+      </label>
+
+      <div class="row">
+        <label for="name">Name <span class="hint">(optional)</span>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" />
+        </label>
+        <label for="email">Email <span class="hint">(optional)</span>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+        </label>
+      </div>
+
+      <label for="page">Page <span class="hint">(optional — which panatau page)</span>
+        <input id="page" name="page" type="text" placeholder="wardrobe.html" autocomplete="off" />
+      </label>
+
+      <div class="actions">
+        <button type="submit">Send suggestion</button>
+        <p class="note">Goes to Steven. A copy for the inbox. No account needed.</p>
+      </div>
+    </form>
+  </main>
+  <script>
+    (function () {
+      var params = new URLSearchParams(location.search);
+      if (params.get("sent") === "1") {
+        var thanks = document.getElementById("thanks");
+        if (thanks) thanks.hidden = false;
+      }
+      var pageEl = document.getElementById("page");
+      if (pageEl && !pageEl.value) {
+        var fromQ = params.get("page");
+        if (fromQ) pageEl.value = fromQ;
+      }
+    })();
+  </script>
+</body>
+</html>
