@@ -365,6 +365,19 @@ a.mark { color: inherit; text-decoration: none; }
 }
 .timeline a { color: var(--accent); }
 
+.wardrobe-fig {
+  padding: 0.2rem 0 0.85rem;
+}
+.wardrobe-fig img {
+  max-width: 100%;
+  max-height: none;
+  object-fit: contain;
+  background: #f3ead7;
+}
+.timeline .wardrobe-fig { margin-top: 0.55rem; }
+.wardrobe-page { max-width: 46rem; }
+.wardrobe-page a { color: var(--accent); }
+
 .north-page a,
 .borders-page a { color: var(--accent); }
 
