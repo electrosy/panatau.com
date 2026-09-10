@@ -156,9 +156,10 @@
     [25.20, 47.20], [25.00, 47.52]
   ]));
 
-  var DANUBE = line([
+  var DANUBE_SOUTH = line([
     [21.35, 44.82], [21.90, 44.70]
-  ].concat(OUTER_SOUTH, DANUBE_BEND, [
+  ].concat(OUTER_SOUTH));
+  var DANUBE_DELTA = line(DANUBE_BEND.concat([
     [28.45, 45.45], [29.05, 45.30], [29.55, 45.18]
   ]));
 
@@ -306,13 +307,13 @@
     lostHatch.appendChild(ns("rect", {
       width: "6",
       height: "6",
-      fill: "#3a1818"
+      fill: "#5c2420"
     }));
     lostHatch.appendChild(ns("path", {
       d: "M 0 0 L 0 6",
-      stroke: "#c47a6a",
+      stroke: "#e8a090",
       "stroke-width": "2",
-      opacity: "0.7"
+      opacity: "0.85"
     }));
     defs.appendChild(lostHatch);
     svg.appendChild(defs);
@@ -323,8 +324,15 @@
       "aria-hidden": "true"
     }));
     svg.appendChild(ns("path", {
-      d: DANUBE,
+      d: DANUBE_SOUTH,
       "class": "bm-river",
+      fill: "none",
+      "aria-hidden": "true"
+    }));
+    svg.appendChild(ns("path", {
+      d: DANUBE_DELTA,
+      id: "bm-danube-delta",
+      "class": "bm-river is-off",
       fill: "none",
       "aria-hidden": "true"
     }));
@@ -412,6 +420,11 @@
       }
       label.setAttribute("class", "bm-label is-" + labelState);
     });
+    var delta = document.getElementById("bm-danube-delta");
+    if (delta) {
+      var dobrujaOn = (era.states.dobrujaNorth || OFF) !== OFF;
+      delta.setAttribute("class", "bm-river" + (dobrujaOn ? "" : " is-off"));
+    }
 
     var dots = dotsEl.querySelectorAll("button");
     for (var d = 0; d < dots.length; d++) {
