@@ -403,8 +403,7 @@
       var path = document.getElementById("bm-r-" + r.id);
       var label = document.getElementById("bm-l-" + r.id);
       path.setAttribute("class", "bm-region is-" + state);
-      if (state === "other") path.style.fill = "url(#bm-hatch)";
-      else if (state === "lost") path.style.fill = "url(#bm-lost-hatch)";
+      if (state === "lost") path.style.fill = "url(#bm-lost-hatch)";
       else path.style.fill = "";
       var labelState = state;
       if (r.id === "transylvaniaNorth") {
