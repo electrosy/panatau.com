@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Borders — Panatau</title>
+  <meta name="description" content="How Romania’s borders changed: the three lands, the United Principalities, Greater Romania, wartime losses, and the line that held after 1947." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="dress" aria-hidden="true"><img src="images/ornament-band.png" alt="" /></div>
+  <header class="top">
+    <a class="mark" href="index.html">panatau</a>
+    <img class="flag" src="images/romanian-flag.png" alt="Romanian flag" />
+    <nav class="tabs" aria-label="Sections">
+      <a href="index.html#words">Words</a>
+      <a href="stories.html">Stories</a>
+      <a href="orthodoxy.html">Orthodoxy</a>
+      <a href="crafts.html">Crafts</a>
+      <a href="music.html">Music</a>
+      <a href="house.html">The house</a>
+      <a href="well.html">The well</a>
+      <a href="wooden-churches.html">Wooden churches</a>
+      <a href="villages.html">Villages</a>
+      <a href="north.html">North</a>
+      <a href="games.html">Games</a>
+      <a href="market.html">The market</a>
+      <a href="rivers.html">Rivers</a>
+      <a href="harvest.html">Harvest</a>
+      <a href="winter.html">Winter</a>
+      <a href="year.html">The year</a>
+      <a href="index.html#history">History</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="borders.html" class="is-on" aria-current="page">Borders</a>
+      <a href="women.html">Women</a>
+      <a href="men.html">Men</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <main class="lesson borders-page">
+    <p class="crumb"><a href="index.html#history">History</a></p>
+    <h1>Borders</h1>
+    <p class="lede">The line moved more than once. Dated stops, not a sermon. Keep the stages separate — the same habit as the <a href="timeline.html">timeline</a>.</p>
+
+    <section class="border-map" aria-label="Animated schematic of Romania’s changing borders">
+      <p class="border-map-note">A schematic teaching map, not a surveyor’s map. Shapes are simplified so the eras can be seen in one sitting.</p>
+      <div class="border-map-frame">
+        <svg id="border-map-svg" viewBox="0 0 960 660" role="img" aria-labelledby="bm-title bm-caption"></svg>
+      </div>
+      <div class="border-map-meta">
+        <p class="when" id="bm-years"></p>
+        <h2 id="bm-title"></h2>
+        <p id="bm-caption"></p>
+      </div>
+      <div class="border-map-ui">
+        <button type="button" id="bm-play" aria-pressed="true">Pause</button>
+        <button type="button" id="bm-prev">Prev</button>
+        <button type="button" id="bm-next">Next</button>
+        <label class="border-map-scrub">
+          Era
+          <input type="range" id="bm-scrub" min="0" max="5" value="0" step="1" />
+        </label>
+      </div>
+      <ul class="border-map-legend">
+        <li><i class="is-in"></i> In the Romanian state of this era</li>
+        <li><i class="is-other"></i> Under another crown</li>
+        <li><i class="is-lost"></i> Lost in 1940</li>
+      </ul>
+      <ol class="border-map-eras" id="bm-dots"></ol>
+    </section>
+    <noscript><p>The map needs JavaScript. The dated sections below do not.</p></noscript>
+
+    <h2>The three lands</h2>
+    <p class="when">14th century – 1858</p>
+    <p>For most of the last several hundred years there was no single Romanian state. Wallachia lay south of the mountains, between the Carpathians and the Danube. Moldavia lay to the east, toward the Prut. Transylvania sat inside the arc, under the Hungarian crown and later in the Habsburg contest — Romanian speakers many on the ground, late to political voice. Tribute, church endowment, and switching protectors were ordinary tools. A painted monastery or a wooden gate belongs to that arrangement, not to a national museum planned in advance. See <a href="lessons/three-lands.html">three lands, not one court</a>. Michael the Brave held all three briefly in 1600; the lands went their ways again. That short fact sits on <a href="men.html">men</a>.</p>
+    <p>The edges of Moldavia itself moved before any modern union. Bukovina passed to the Habsburgs in 1775. Bessarabia, east of the Prut, passed to Russia in 1812. Hold those earlier losses in mind when 1918 looks like a sudden widening. It was also a gathering of pieces that had already been cut away.</p>
+
+    <h2>United Principalities</h2>
+    <p class="when">1859</p>
+    <p>Wallachia and Moldavia elected the same prince, Alexandru Ioan Cuza. That double election is the start of the modern state — one administration assembled from two. It was clever, and it was fragile. Land, schools, and a civil code followed; boyar patience did not. Cuza was forced out in 1866. A foreign prince, Carol of Hohenzollern, was brought in to make the new state look permanent to the courts of Europe. Transylvania was not in the bargain. The <a href="lessons/union.html">union</a> lesson keeps 1859 and 1918 apart on purpose.</p>
+
+    <h2>Independence and Dobruja</h2>
+    <p class="when">1877–1878, then 1913</p>
+    <p>War against the Ottomans and the treaties that followed made Romania a recognized independent state. Carol became king in 1881. Northern Dobruja, and with it Constanța, came in that settlement — a sea window the principalities had not held. Southern Dobruja, the Cadrilater, was added after the Second Balkan War in 1913, taken from Bulgaria. A short campaign on the southern edge, before the much larger war that would remake the whole map.</p>
+
+    <h2>Greater Romania</h2>
+    <p class="when">1918</p>
+    <p>After the First World War, as the old empires broke, assemblies in Bessarabia, Bukovina, and Transylvania voted union with the kingdom. The diplomats spent the next years arguing the edges. The enlarged map is what people later called Greater Romania — the widest the line would reach. It included many who were not Romanian speakers: Hungarians in Transylvania, Germans, Jews, Ukrainians, and others. A union voted in a crisis is not the same thing as a settlement everyone accepted. Queen Marie’s wartime and diplomatic work sits in that story; the century that followed is on <a href="lessons/century.html">a century, read slowly</a>.</p>
+
+    <h2>Wartime losses</h2>
+    <p class="when">1940–1944</p>
+    <p>In 1940 the enlarged kingdom was cut from three sides. Bessarabia and northern Bukovina went to the Soviet Union. Northern Transylvania went to Hungary, by the Second Vienna Award — a temporary award, as it turned out, and a bitter one while it lasted. Southern Dobruja went back to Bulgaria, by the Treaty of Craiova. Those losses broke the Carol regime. Ion Antonescu took power and allied with Germany. The state also carried out and enabled the murder and deportation of Jews and Roma, especially in Bessarabia, Bukovina, and Transnistria. Keep the alliance, the crimes, and the late switch in the same short frame — none of them cancel the others. In August 1944 the country turned against Germany. Northern Transylvania was retaken as the front moved; the other 1940 cuts were not undone.</p>
+
+    <h2>The line that held</h2>
+    <p class="when">1944–1948, then the present</p>
+    <p>The peace and the Paris treaties left a smaller country than 1918. Northern Transylvania remained with Romania. Bessarabia and northern Bukovina stayed with the Soviet Union — later the Republic of Moldova and part of Ukraine. Southern Dobruja stayed with Bulgaria. By the end of 1947 the king was gone and a communist republic stood in the kingdom’s place. The outer line did not jump again in the way the 1940 line had. What changed inside was the state, the land, and who could leave.</p>
+    <p>The present border is that postwar outline: the Carpathian bowl, the southern plain, Moldavia west of the Prut, and northern Dobruja to the sea. NATO in 2004 and the EU in 2007 changed the frame, not the surveyor’s marks. Ordinary arguments still run through language, region, and memory. The ridges outlast every map on this page. Dated stops end; the ground does not.</p>
+  </main>
+  <script src="borders-map.js"></script>
+</body>
+</html>
