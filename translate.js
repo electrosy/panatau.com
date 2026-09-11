@@ -166,8 +166,12 @@
       seenChip[id] = true;
       return true;
     });
+    var text = out.join(" ").replace(/\s+([,.;:!?])/g, "$1").replace(/\s+/g, " ").trim();
+    text = text.replace(/(^|[.!?]\s+)(\S)/g, function (_, lead, ch) {
+      return lead + ch.toUpperCase();
+    });
     return {
-      text: out.join(" ").replace(/\s+([,.;:!?])/g, "$1").replace(/\s+/g, " ").trim(),
+      text: text,
       unknown: unique(unknown),
       dialects: dialects,
       notes: unique(notes),
