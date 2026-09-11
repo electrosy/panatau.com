@@ -158,6 +158,7 @@ img { display: block; width: 100%; height: auto; }
   list-style: none;
   appearance: none;
   -webkit-appearance: none;
+  user-select: none;
 }
 .menu-list {
   position: absolute;
@@ -220,6 +221,7 @@ img { display: block; width: 100%; height: auto; }
 @media (max-width: 860px) {
   .nav-toggle { display: inline-block; }
   .nav-wrap[open] { flex: 1 1 100%; }
+  .themes { flex: 1 1 100%; }
   .nav-wrap .tabs {
     flex-direction: column;
     align-items: stretch;
