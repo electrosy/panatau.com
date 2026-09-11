@@ -129,25 +129,31 @@
         i += 1;
         continue;
       }
-      totalWords += 1;
       var hit = longestHit(tokens, i, dir);
       if (hit) {
+        totalWords += hit.size;
         coveredWords += hit.size;
         out.push(joinMeanings(hit.hits, dir));
         dialects = dialects.concat(collectDialects(hit.hits));
         notes = notes.concat(collectNotes(hit.hits));
-        if (dir === "ro-en" && dialectIndex[hit.key]) {
-          dialectIndex[hit.key].forEach(function (x) {
-            dialects.push({
-              head: x.entry.ro,
-              form: x.dialect.form,
-              regions: x.dialect.regions,
-              note: x.dialect.note || "Regional form of " + x.entry.ro + "."
+        tokens.slice(i, i + hit.size).forEach(function (piece) {
+          if (!piece.isWord) return;
+          var wordKey = fold(piece.raw);
+          dialects = dialects.concat(collectDialects(lookup(wordKey, dir)));
+          if (dir === "ro-en" && dialectIndex[wordKey]) {
+            dialectIndex[wordKey].forEach(function (x) {
+              dialects.push({
+                head: x.entry.ro,
+                form: x.dialect.form,
+                regions: x.dialect.regions,
+                note: x.dialect.note || "Regional form of " + x.entry.ro + "."
+              });
             });
-          });
-        }
+          }
+        });
         i += hit.size;
       } else {
+        totalWords += 1;
         unknown.push(tok.raw);
         out.push(tok.raw);
         i += 1;
