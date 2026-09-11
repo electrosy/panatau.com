@@ -1,0 +1,81 @@
+{
+  "note": "Newest first. Updated when the site grows. Prepend a dated group (or a line under today’s date). whats-new.html reads this file.",
+  "groups": [
+    {
+      "date": "11 Sept 2026",
+      "items": [
+        "This <a href=\"whats-new.html\">What's new</a> list.",
+        "<a href=\"north.html\">North</a> deepened — Maramureș wood and hay, Bucovina painted walls, northern Moldavia, winter, and the rivers. Three new imagined plates.",
+        "<a href=\"translate.html\">Translate</a>, <a href=\"learn-romanian.html\">Learn Romanian</a>, and <a href=\"learn-english.html\">Learn English</a>.",
+        "<a href=\"troita.html\">Troița</a> — the wayside cross.",
+        "Header grouped into dropdown menus.",
+        "<a href=\"romance.html\">Romance</a> — courtship and dor.",
+        "Imagined-art plates on the remaining text pages.",
+        "<a href=\"moara.html\">The mill</a> (moară).",
+        "<a href=\"dragobete.html\">Dragobete</a>.",
+        "<a href=\"pottery.html\">Pottery</a> — Horezu and the wheel."
+      ]
+    },
+    {
+      "date": "10 Sept 2026",
+      "items": [
+        "<a href=\"sanziene.html\">Sânziene</a>.",
+        "<a href=\"paste.html\">Paște</a>.",
+        "<a href=\"colinde.html\">Colinde</a>.",
+        "<a href=\"gates.html\">Gates</a> — Maramureș porți de lemn.",
+        "<a href=\"delta.html\">The delta</a>.",
+        "<a href=\"wedding.html\">Wedding</a>.",
+        "<a href=\"martisor.html\">Mărțișor</a>.",
+        "<a href=\"tuica.html\">Țuică</a>, after a first <a href=\"wine.html\">wine</a> page.",
+        "<a href=\"bread.html\">Bread</a>, and the <a href=\"timeline.html\">timeline</a> deepened again.",
+        "<a href=\"suggest.html\">Suggest</a> box, and a <a href=\"suggestions.html\">suggestions</a> board.",
+        "Imagined-art plates for wooden churches, shepherds, sea, villages, wildlife, and harvest.",
+        "<a href=\"wardrobe.html\">Wardrobe</a> plates on the timeline.",
+        "<a href=\"sea.html\">The sea</a> — the Constanța coast.",
+        "<a href=\"shepherds.html\">Shepherds</a> — ciobani, the stână, transhumance.",
+        "<a href=\"north.html\">North</a>, <a href=\"borders.html\">borders</a>, and a schematic map with era animation.",
+        "<a href=\"wildlife.html\">Wildlife</a> — animals people still meet."
+      ]
+    },
+    {
+      "date": "9 Sept 2026",
+      "items": [
+        "<a href=\"villages.html\">Villages</a> — the sat as a living unit.",
+        "Playable yard games in the browser: <a href=\"games/sotron.html\">șotron</a>, <a href=\"games/hide.html\">hide-and-seek</a>, <a href=\"games/baba.html\">baba oarbă</a>, <a href=\"games/elastic.html\">elasticul</a>, <a href=\"games/tara.html\">țară țară</a> — linked from <a href=\"games.html\">games</a>.",
+        "<a href=\"winter.html\">Winter</a> — iarna, Ignat, wood, the indoor months.",
+        "<a href=\"harvest.html\">Harvest</a> — seceriș, maize, vines, the cellar.",
+        "<a href=\"rivers.html\">Rivers</a> — Danube, Olt, Mureș, and the valleys people name.",
+        "<a href=\"orthodoxy.html\">Orthodoxy</a> expanded: history, beliefs, parish life, more saint plates.",
+        "<a href=\"well.html\">The well</a>.",
+        "More home recipes on the <a href=\"index.html#recipes\">recipes</a> tab.",
+        "<a href=\"year.html\">The year</a> expanded: seasons, feasts, fasts, table customs.",
+        "<a href=\"house.html\">The house</a> — yard, gate, stove, rooms; then daily life then-and-now, with imagined kitchen plates.",
+        "<a href=\"timeline.html\">Timeline</a> of Romanian history.",
+        "<a href=\"women.html\">Women</a> and <a href=\"men.html\">men</a>.",
+        "<a href=\"market.html\">The market</a>.",
+        "<a href=\"wooden-churches.html\">Wooden churches</a>.",
+        "<a href=\"games.html\">Children’s games</a>.",
+        "<a href=\"quiz.html\">History quiz</a>.",
+        "<a href=\"music.html\">Music</a> — folk music and dance.",
+        "More common <a href=\"words.html\">words</a>, and short practice <a href=\"stories.html\">stories</a>."
+      ]
+    },
+    {
+      "date": "8 Sept 2026",
+      "items": [
+        "<a href=\"ronet.html\">ro.net</a> desk, and <a href=\"ronet-news.html\">Good news</a>.",
+        "<a href=\"proverbs.html\">Proverbs</a>.",
+        "<a href=\"year.html\">The year</a> — feasts, fasts, and the table.",
+        "<a href=\"crafts.html\">Crafts</a>.",
+        "<a href=\"orthodoxy.html\">Orthodoxy</a>, beliefs, and saints.",
+        "<a href=\"stories.html\">Stories</a> in Romanian.",
+        "<a href=\"words.html\">A hundred common words</a>.",
+        "History lessons: <a href=\"lessons/latin.html\">Latin that stayed</a>, <a href=\"lessons/three-lands.html\">three lands</a>, <a href=\"lessons/painted-walls.html\">painted walls</a>, <a href=\"lessons/union.html\">union</a>, <a href=\"lessons/century.html\">a century</a>, <a href=\"lessons/thrace-dacia.html\">Thrace and Dacia</a>, <a href=\"lessons/constanta.html\">Constanța</a>.",
+        "<a href=\"dialects.html\">Dialects</a>.",
+        "<a href=\"index.html#recipes\">Recipes</a>, <a href=\"index.html#maps\">maps</a>, and the History / Store tabs.",
+        "Pictures, themes (Voroneț, dusk, folk, wood), the flag, and page dressing.",
+        "GitHub Pages for panatau.com — CNAME, .nojekyll, rename from the starter."
+      ]
+    }
+  ]
+}
