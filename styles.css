@@ -153,9 +153,11 @@ img { display: block; width: 100%; height: auto; }
 }
 .menu[open] > summary::after { content: "▴"; }
 
-.menu > summary,
-.nav-toggle {
-  user-select: none;
+.nav-toggle,
+.menu > summary {
+  list-style: none;
+  appearance: none;
+  -webkit-appearance: none;
 }
 .menu-list {
   position: absolute;

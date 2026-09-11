@@ -55,11 +55,14 @@
   var wrap = document.querySelector(".nav-wrap");
   var menus = Array.prototype.slice.call(document.querySelectorAll(".menu"));
   var desktop = window.matchMedia("(min-width: 861px)");
-  var hoverable = window.matchMedia("(hover: hover) and (pointer: fine)");
   var leaveTimer = 0;
 
   function isDesktop() {
     return desktop.matches;
+  }
+
+  function isMouse(e) {
+    return !e.pointerType || e.pointerType === "mouse";
   }
 
   function closeMenus(except) {
@@ -96,7 +99,7 @@
     });
     if (summary) {
       summary.addEventListener("click", function (e) {
-        if (!isDesktop() || !hoverable.matches) return;
+        if (!isDesktop() || !isMouse(e)) return;
         if (e.detail === 0) return;
         e.preventDefault();
         if (!menu.open) {
@@ -105,14 +108,14 @@
         }
       });
     }
-    menu.addEventListener("mouseenter", function () {
-      if (!isDesktop() || !hoverable.matches) return;
+    menu.addEventListener("pointerenter", function (e) {
+      if (!isDesktop() || !isMouse(e)) return;
       clearTimeout(leaveTimer);
       closeMenus(menu);
       menu.open = true;
     });
-    menu.addEventListener("mouseleave", function () {
-      if (!isDesktop() || !hoverable.matches) return;
+    menu.addEventListener("pointerleave", function (e) {
+      if (!isDesktop() || !isMouse(e)) return;
       clearTimeout(leaveTimer);
       leaveTimer = setTimeout(function () {
         menu.open = false;
