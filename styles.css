@@ -1095,3 +1095,125 @@ a.mark { color: inherit; text-decoration: none; }
 .site-foot a:focus-visible {
   color: var(--ink);
 }
+
+.search-page { max-width: 42rem; }
+.search-form {
+  margin: 1.15rem 0 0.55rem;
+}
+.search-form label {
+  display: grid;
+  gap: 0.4rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.search-field {
+  display: flex;
+  gap: 0.45rem;
+  align-items: stretch;
+}
+.search-form input[type="search"] {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.12rem;
+  line-height: 1.5;
+  padding: 0.7rem 0.8rem;
+  border-radius: 0.45rem;
+}
+.search-form input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+}
+.search-form input[type="search"]:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.search-clear {
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--tab);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 0.95rem;
+  cursor: pointer;
+}
+.search-clear:hover,
+.search-clear:focus-visible {
+  border-color: var(--accent);
+}
+.search-status {
+  margin: 0 0 0.85rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  min-height: 1.1em;
+}
+.search-empty p { color: var(--muted); }
+.search-hints {
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+}
+.search-hints button {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.search-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+.search-hit {
+  display: grid;
+  gap: 0.28rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  padding: 0.9rem 1rem 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+.search-hit:hover,
+.search-hit:focus-visible {
+  border-color: var(--accent);
+}
+.search-title {
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+.search-path {
+  font-family: system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.search-snip {
+  color: var(--muted);
+  line-height: 1.45;
+}
+.search-hit mark,
+.search-title mark,
+.search-snip mark {
+  background: color-mix(in srgb, var(--accent) 30%, var(--bg-2));
+  color: var(--ink);
+  padding: 0 0.12em;
+}
