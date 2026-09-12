@@ -121,7 +121,7 @@
       Suggestion sent. You can send another below anytime.
     </div>
 
-    <form class="suggest-form" action="https://formsubmit.co/steven@coloritcompany.com" method="POST">
+    <form class="suggest-form" action="https://formsubmit.co/steven@coloritcompany.com" method="POST" enctype="multipart/form-data">
       <input type="hidden" name="_subject" value="[Panatau suggestion]" />
       <input type="hidden" name="_cc" value="heysteve5@gmail.com" />
       <input type="hidden" name="_captcha" value="false" />
@@ -144,6 +144,11 @@
 
       <label for="page">Page <span class="hint">(optional — which panatau page)</span>
         <input id="page" name="page" type="text" placeholder="wardrobe.html" autocomplete="off" />
+      </label>
+
+      <label for="attachment">Image <span class="hint">(optional — screenshot, sketch, or photo of the idea)</span>
+        <input id="attachment" name="attachment" type="file" accept="image/*" />
+        <span class="hint">The image goes with the email via FormSubmit. Keep the file a reasonable size.</span>
       </label>
 
       <div class="actions">

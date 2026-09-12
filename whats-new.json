@@ -2,6 +2,12 @@
   "note": "Newest first. Updated when the site grows. Prepend a dated group (or a line under today’s date). whats-new.html reads this file.",
   "groups": [
     {
+      "date": "12 Sept 2026",
+      "items": [
+        "Optional image on the <a href=\"suggest.html\">Suggest</a> form — a screenshot, sketch, or photo can go with the email."
+      ]
+    },
+    {
       "date": "11 Sept 2026",
       "items": [
         "<a href=\"dance.html\">Dance</a> — hora, sârba, and the floor the whole room can enter.",
