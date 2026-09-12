@@ -500,6 +500,112 @@ a.mark { color: inherit; text-decoration: none; }
 }
 .timeline a { color: var(--accent); }
 
+.timeline-overview {
+  margin: 1.2rem 0 1.5rem;
+  padding: 1.05rem 1.1rem 1.15rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+}
+.timeline-overview h2 {
+  margin: 0 0 0.45rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+.timeline-overview p {
+  margin: 0 0 0.85rem;
+  color: var(--ink);
+}
+.timeline-overview-note {
+  margin: -0.35rem 0 0.9rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.timeline-arc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.45rem;
+}
+.timeline-arc a {
+  display: inline-block;
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  background: var(--bg);
+}
+.timeline-arc a:hover,
+.timeline-arc a:focus-visible {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+.timeline-arc a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.timeline-eras {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0 0 0.4rem;
+}
+.era {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+}
+.era > summary {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.85rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--tab);
+}
+.era[open] > summary {
+  border-bottom: 1px solid var(--line);
+}
+.era > summary::-webkit-details-marker,
+.era > summary::marker { display: none; }
+.era > summary::after {
+  content: "▾";
+  margin-left: auto;
+  font-size: 0.7em;
+  opacity: 0.8;
+}
+.era[open] > summary::after { content: "▴"; }
+.era > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.era-span {
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+.era .timeline {
+  margin: 1rem 1rem 0.25rem 1.2rem;
+  padding: 0 0 0.35rem;
+}
+
 .wardrobe-fig {
   padding: 0.2rem 0 0.85rem;
 }

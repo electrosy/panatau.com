@@ -155,4 +155,32 @@
       });
     });
   }
+
+  function openEraForHash() {
+    var id = (location.hash || "").replace(/^#/, "");
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (!el) return;
+    var era = el.classList && el.classList.contains("era") ? el : el.closest("details.era");
+    if (!era) return;
+    document.querySelectorAll("details.era").forEach(function (block) {
+      block.open = block === era;
+    });
+    var summary = era.querySelector("summary");
+    if (summary) summary.setAttribute("aria-expanded", "true");
+    if (typeof el.scrollIntoView === "function") {
+      el.scrollIntoView({ block: "start" });
+    }
+  }
+
+  document.querySelectorAll("details.era").forEach(function (era) {
+    var summary = era.querySelector("summary");
+    if (summary) summary.setAttribute("aria-expanded", era.open ? "true" : "false");
+    era.addEventListener("toggle", function () {
+      if (summary) summary.setAttribute("aria-expanded", era.open ? "true" : "false");
+    });
+  });
+
+  openEraForHash();
+  window.addEventListener("hashchange", openEraForHash);
 })();

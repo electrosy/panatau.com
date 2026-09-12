@@ -4,6 +4,7 @@
     {
       "date": "12 Sept 2026",
       "items": [
+        "<a href=\"timeline.html\">Timeline</a> — an overview of the arc, collapsible eras, and more dated stops.",
         "<a href=\"search.html\">Search</a> — type a word and jump to the page that still holds it.",
         "Optional image on the <a href=\"suggest.html\">Suggest</a> form — a screenshot, sketch, or photo can go with the email."
       ]
