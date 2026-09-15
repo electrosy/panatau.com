@@ -2,6 +2,12 @@
   "note": "Newest first. Updated when the site grows. Prepend a dated group (or a line under today’s date). whats-new.html reads this file.",
   "groups": [
     {
+      "date": "15 Sept 2026",
+      "items": [
+        "Imagined art on <a href=\"crafts.html\">crafts</a>, <a href=\"music.html\">music</a>, <a href=\"dance.html\">dance</a>, and <a href=\"games.html\">games</a>, and a little more copy on those pages."
+      ]
+    },
+    {
       "date": "13 Sept 2026",
       "items": [
         "<a href=\"salt.html\">Salt</a> — sare, the welcome on the cloth, the cellar brine, and the ocnă under the hill."
