@@ -2,6 +2,12 @@
   "note": "Newest first. Updated when the site grows. Prepend a dated group (or a line under today’s date). whats-new.html reads this file.",
   "groups": [
     {
+      "date": "17 Sept 2026",
+      "items": [
+        "Three more wires on <a href=\"ronet-news.html\">Good news</a>: a manufacturing grant session, Miko Castle in Olteni, and Târgu Mureș on the Art Nouveau routes."
+      ]
+    },
+    {
       "date": "16 Sept 2026",
       "items": [
         "A Romanian keychain on the <a href=\"index.html#store\">Store</a> table, in place of the empty brass-key slot.",
