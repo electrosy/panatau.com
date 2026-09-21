@@ -817,9 +817,17 @@
     {
       "title": "Wardrobe",
       "url": "wardrobe.html",
-      "description": "Working clothes and elite or city clothes, drawn as pairs. Imagined plates, not reconstructions from a single grave or museum case. The dated stops live on the timeline.",
-      "keywords": [],
-      "text": "Timeline Wardrobe Working clothes and elite or city clothes, drawn as pairs. Imagined plates, not reconstructions from a single grave or museum case. The dated stops live on the timeline. Imagined art — working and elite dress (schematic, not a museum reconstruction). Dacia and the early centuries: a short tunic and wrapped legs for work, a longer coat and cloak for rank. On the timeline. Imagined art — working and elite dress (schematic, not a museum reconstruction). The principalities: the ia — the embroidered blouse named on crafts — beside a boyar caftan. On the timeline. Imagined art — working and elite dress (schematic, not a museum reconstruction). The 1859 union and the kingdom years: an embroidered village shirt beside a city gown. On the timeline. Imagined art — working and elite dress (schematic, not a museum reconstruction). After 1918, in the interwar kingdom: workshop vest…"
+      "description": "Working clothes and elite or city clothes, drawn as pairs across eras. A field tunic beside a cloak, an ia beside a caftan, a work dress beside a suit. A wardrobe, not a costume catalog. The dated stops live on the…",
+      "keywords": [
+        "Dacia and the early centuries",
+        "The principalities",
+        "Union and the kingdom",
+        "The interwar kingdom",
+        "The communist decades",
+        "The present",
+        "How to read these plates"
+      ],
+      "text": "Timeline Wardrobe Working clothes and elite or city clothes, drawn as pairs across eras. A field tunic beside a cloak, an ia beside a caftan, a work dress beside a suit. A wardrobe, not a costume catalog. The dated stops live on the timeline. Dacia and the early centuries Imagined art — working and elite dress (schematic, not a museum reconstruction). Field and house work sat in a short tunic of linen or wool, a belt pouch, and cloth wrapped at the calf. The cloth is undyed and short enough to walk and bend. Rank on the same plate is a longer patterned coat, a dark cloak closed with a clasp, and a cap. Length, a dyed edge, and a cloak you do not work in are what the drawing uses for rank. Writers of those centuries left more about kings and wars than about a weekday shirt. The campaigns, the highland forts, and the short life of the Roman province are on the timeline. This plate keeps…"
     },
     {
       "title": "Wedding",
@@ -851,6 +859,7 @@
       "url": "whats-new.html",
       "description": "A dated list of what this site has added, from the GitHub Pages start through now.",
       "keywords": [
+        "21 Sept 2026",
         "18 Sept 2026",
         "17 Sept 2026",
         "16 Sept 2026",
@@ -862,7 +871,7 @@
         "9 Sept 2026",
         "8 Sept 2026"
       ],
-      "text": "Home What's new A dated list of what this site has added, from the GitHub Pages start through now. Newest first. Updated when the site grows. 18 Sept 2026 A little more copy on țuică, gates, storks, Sânziene, and the sea. 17 Sept 2026 A little more copy on pottery, colinde, Dragobete, Mărțișor, and Paște. Imagined art on Orthodoxy, the year, and dialects, and a modest plate above the history quiz. Three more wires on Good news: a manufacturing grant session, Miko Castle in Olteni, and Târgu Mureș on the Art Nouveau routes. 16 Sept 2026 A Romanian keychain on the Store table, in place of the empty brass-key slot. Imagined art on rivers, winter, men, women, and troița, and a little more copy on those pages. Imagined art on honey, salt, and cheese, and a little more copy on honey and salt. 15 Sept 2026 Cheese — brânză, telemea, the table and the cellar brine. Imagined art on stories…"
+      "text": "Home What's new A dated list of what this site has added, from the GitHub Pages start through now. Newest first. Updated when the site grows. 21 Sept 2026 A little more copy on wardrobe — working clothes and city dress across the plates. 18 Sept 2026 A little more copy on țuică, gates, storks, Sânziene, and the sea. 17 Sept 2026 A little more copy on pottery, colinde, Dragobete, Mărțișor, and Paște. Imagined art on Orthodoxy, the year, and dialects, and a modest plate above the history quiz. Three more wires on Good news: a manufacturing grant session, Miko Castle in Olteni, and Târgu Mureș on the Art Nouveau routes. 16 Sept 2026 A Romanian keychain on the Store table, in place of the empty brass-key slot. Imagined art on rivers, winter, men, women, and troița, and a little more copy on those pages. Imagined art on honey, salt, and cheese, and a little more copy on honey and salt. 15…"
     },
     {
       "title": "Wildlife",
