@@ -30,15 +30,17 @@
     {
       "title": "Cheese",
       "url": "cheese.html",
-      "description": "Brânză. The white salt on the table and in the jar. Not a shop wall of labels, and not a tasting flight.",
+      "description": "Brânză. The white salt on the table and in the jar — a piece cut for the bread, not a shop wall of labels, and not a tasting flight.",
       "keywords": [
         "On the table",
         "From the sheep or the cow",
+        "The names people use",
+        "The day it is made",
         "In the cellar",
         "Market and house",
         "When the house no longer makes it"
       ],
-      "text": "Home Cheese Brânză. The white salt on the table and in the jar. Not a shop wall of labels, and not a tasting flight. Imagined art — the white salt and the jar, not a photograph of one cellar On the table Cheese sits where bread sits. A slice of telemea with the loaf, or crumbled into ouă cu telemea — eggs and the salty white kind, the weekday pan on the recipes tab. Mămăligă with a piece on the side. That loaf is on bread. You do not need a cheese board. You need the habit of asking whether this table still cuts a piece from a cloth-wrapped round, or only opens a plastic tub. From the sheep or the cow Summer is milk. The first cheese is caș, fresh, barely salted. What is pressed and put away becomes brânză: telemea in brine, brânză de burduf packed until it bites, urdă from the whey that was left. Sheep more than cow, up at the fold — that work, the stână and the walk, is on shepherds…"
+      "text": "Home Cheese Brânză. The white salt on the table and in the jar — a piece cut for the bread, not a shop wall of labels, and not a tasting flight. Imagined art — the white salt and the jar, not a photograph of one cellar On the table Cheese sits where bread sits. A slice of telemea with the loaf, or crumbled into ouă cu telemea — eggs and the salty white kind, the weekday pan on the recipes tab. Mămăligă takes a piece on the side, or a crumble while the cornmeal is still hot. That loaf is on bread. You do not set out a board of kinds. You cut what the house has, and the knife stays on the cloth. The cut is ordinary and specific. Someone lifts a slab from the jar and lets the brine drip back, or takes the round out of its cloth. A wedge for the table. The rest goes back — paper from the piață, or the same damp cloth, so the cut face does not dry by evening. A child gets a smaller piece. A…"
     },
     {
       "title": "Colinde",
@@ -864,6 +866,7 @@
       "url": "whats-new.html",
       "description": "A dated list of what this site has added, from the GitHub Pages start through now.",
       "keywords": [
+        "25 Sept 2026",
         "24 Sept 2026",
         "23 Sept 2026",
         "22 Sept 2026",
@@ -879,7 +882,7 @@
         "9 Sept 2026",
         "8 Sept 2026"
       ],
-      "text": "Home What's new A dated list of what this site has added, from the GitHub Pages start through now. Newest first. Updated when the site grows. 24 Sept 2026 A little more copy on the market — the scale and the price talk, dawn and the empty square, and a second plate. 23 Sept 2026 A little more copy on the mill — the stones and the wait, a thin August creek, an iced race, and a second plate. 22 Sept 2026 A little more copy on the well — the cumpănă and the wheel, and apa de la fântână. 21 Sept 2026 A little more copy on wardrobe — working clothes and city dress across the plates. 18 Sept 2026 A little more copy on țuică, gates, storks, Sânziene, and the sea. 17 Sept 2026 A little more copy on pottery, colinde, Dragobete, Mărțișor, and Paște. Imagined art on Orthodoxy, the year, and dialects, and a modest plate above the history quiz. Three more wires on Good news: a manufacturing grant…"
+      "text": "Home What's new A dated list of what this site has added, from the GitHub Pages start through now. Newest first. Updated when the site grows. 25 Sept 2026 A little more copy on cheese — the cut and the cloth, the names people use, the day it is made, and a second plate. 24 Sept 2026 A little more copy on the market — the scale and the price talk, dawn and the empty square, and a second plate. 23 Sept 2026 A little more copy on the mill — the stones and the wait, a thin August creek, an iced race, and a second plate. 22 Sept 2026 A little more copy on the well — the cumpănă and the wheel, and apa de la fântână. 21 Sept 2026 A little more copy on wardrobe — working clothes and city dress across the plates. 18 Sept 2026 A little more copy on țuică, gates, storks, Sânziene, and the sea. 17 Sept 2026 A little more copy on pottery, colinde, Dragobete, Mărțișor, and Paște. Imagined art on…"
     },
     {
       "title": "Wildlife",
