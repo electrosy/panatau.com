@@ -6,6 +6,9 @@ var path = require("path");
 
 var ROOT = path.resolve(__dirname, "..");
 var ORIGIN = "https://panatau.com";
+var LASTMOD = {
+  "forest.html": "2026-10-06"
+};
 
 function walk(dir, out) {
   fs.readdirSync(dir).forEach(function (name) {
@@ -35,17 +38,17 @@ function isRedirectOnly(rel) {
   return /http-equiv=["']refresh["']/i.test(html) && !/<main/i.test(html);
 }
 
-function uniqueSorted(urls) {
+function uniqueSorted(entries) {
   var seen = {};
   var out = [];
-  urls.sort(function (a, b) {
-    if (a === ORIGIN + "/") return -1;
-    if (b === ORIGIN + "/") return 1;
-    return a < b ? -1 : a > b ? 1 : 0;
-  }).forEach(function (url) {
-    if (seen[url]) return;
-    seen[url] = true;
-    out.push(url);
+  entries.sort(function (a, b) {
+    if (a.url === ORIGIN + "/") return -1;
+    if (b.url === ORIGIN + "/") return 1;
+    return a.url < b.url ? -1 : a.url > b.url ? 1 : 0;
+  }).forEach(function (entry) {
+    if (seen[entry.url]) return;
+    seen[entry.url] = true;
+    out.push(entry);
   });
   return out;
 }
@@ -53,20 +56,21 @@ function uniqueSorted(urls) {
 function main() {
   var files = [];
   walk(ROOT, files);
-  var urls = [];
+  var entries = [];
   files.forEach(function (rel) {
     if (isRedirectOnly(rel)) return;
-    urls.push(toUrl(rel));
+    entries.push({ url: toUrl(rel), lastmod: LASTMOD[rel] || "" });
   });
-  urls = uniqueSorted(urls);
+  entries = uniqueSorted(entries);
   var xml = [
     "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
     "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">"
-  ].concat(urls.map(function (url) {
-    return "  <url><loc>" + url + "</loc></url>";
+  ].concat(entries.map(function (entry) {
+    var lastmod = entry.lastmod ? "<lastmod>" + entry.lastmod + "</lastmod>" : "";
+    return "  <url><loc>" + entry.url + "</loc>" + lastmod + "</url>";
   })).concat(["</urlset>", ""]).join("\n");
   fs.writeFileSync(path.join(ROOT, "sitemap.xml"), xml);
-  console.log("Wrote " + urls.length + " URLs to sitemap.xml");
+  console.log("Wrote " + entries.length + " URLs to sitemap.xml");
 }
 
 main();
