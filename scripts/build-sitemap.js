@@ -8,7 +8,8 @@ var ROOT = path.resolve(__dirname, "..");
 var ORIGIN = "https://panatau.com";
 var LASTMOD = {
   "forest.html": "2026-10-06",
-  "wooden-churches.html": "2026-10-07"
+  "wooden-churches.html": "2026-10-07",
+  "pottery.html": "2026-10-09"
 };
 
 function walk(dir, out) {
