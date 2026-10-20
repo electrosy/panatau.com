@@ -15,7 +15,8 @@ var LASTMOD = {
   "sea.html": "2026-10-14",
   "proverbs.html": "2026-10-15",
   "storks.html": "2026-10-16",
-  "tuica.html": "2026-10-19"
+  "tuica.html": "2026-10-19",
+  "delta.html": "2026-10-20"
 };
 
 function walk(dir, out) {
