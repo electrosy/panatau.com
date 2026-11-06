@@ -2,6 +2,12 @@
   "note": "Newest first. Updated when the site grows. Prepend a dated group (or a line under today’s date). whats-new.html reads this file.",
   "groups": [
     {
+      "date": "6 Nov 2026",
+      "items": [
+        "A little more copy on <a href=\"dance.html\">Dance</a> — how the circle opens, when the boards get warm, and a second plate."
+      ]
+    },
+    {
       "date": "5 Nov 2026",
       "items": [
         "A little more copy on <a href=\"paste.html\">Paște</a> — Joia Mare, the morning wash, and a second plate."
