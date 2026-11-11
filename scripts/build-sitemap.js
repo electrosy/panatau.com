@@ -31,7 +31,8 @@ var LASTMOD = {
   "paste.html": "2026-11-05",
   "dance.html": "2026-11-06",
   "villages.html": "2026-11-09",
-  "crafts.html": "2026-11-10"
+  "crafts.html": "2026-11-10",
+  "music.html": "2026-11-11"
 };
 
 function walk(dir, out) {
