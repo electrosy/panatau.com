@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://panatau.com/</loc></url>
+  <url><loc>https://panatau.com/andrei.html</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://panatau.com/borders.html</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://panatau.com/bread.html</loc></url>
   <url><loc>https://panatau.com/cheese.html</loc></url>
@@ -50,13 +51,13 @@
   <url><loc>https://panatau.com/moara.html</loc></url>
   <url><loc>https://panatau.com/music.html</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://panatau.com/north.html</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://panatau.com/orthodoxy.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://panatau.com/orthodoxy.html</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://panatau.com/paste.html</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://panatau.com/pottery.html</loc><lastmod>2026-10-09</lastmod></url>
   <url><loc>https://panatau.com/proverbs.html</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://panatau.com/quiz.html</loc></url>
   <url><loc>https://panatau.com/rivers.html</loc></url>
-  <url><loc>https://panatau.com/romance.html</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://panatau.com/romance.html</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://panatau.com/ronet-news.html</loc></url>
   <url><loc>https://panatau.com/ronet.html</loc></url>
   <url><loc>https://panatau.com/salt.html</loc></url>
@@ -84,5 +85,5 @@
   <url><loc>https://panatau.com/women.html</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://panatau.com/wooden-churches.html</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://panatau.com/words.html</loc></url>
-  <url><loc>https://panatau.com/year.html</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://panatau.com/year.html</loc><lastmod>2026-11-25</lastmod></url>
 </urlset>
