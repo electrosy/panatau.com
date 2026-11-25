@@ -36,12 +36,13 @@ var LASTMOD = {
   "games.html": "2026-11-12",
   "sezatoare.html": "2026-11-13",
   "stories.html": "2026-11-16",
-  "romance.html": "2026-11-17",
+  "romance.html": "2026-11-25",
   "house.html": "2026-11-18",
   "borders.html": "2026-11-19",
-  "year.html": "2026-11-20",
-  "orthodoxy.html": "2026-11-23",
-  "north.html": "2026-11-24"
+  "year.html": "2026-11-25",
+  "orthodoxy.html": "2026-11-25",
+  "north.html": "2026-11-24",
+  "andrei.html": "2026-11-25"
 };
 
 function walk(dir, out) {
