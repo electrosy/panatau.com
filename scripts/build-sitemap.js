@@ -10,7 +10,7 @@ var LASTMOD = {
   "forest.html": "2026-10-06",
   "wooden-churches.html": "2026-10-07",
   "pottery.html": "2026-10-09",
-  "winter.html": "2026-10-12",
+  "winter.html": "2026-11-26",
   "wildlife.html": "2026-10-13",
   "sea.html": "2026-10-14",
   "proverbs.html": "2026-10-15",
@@ -21,7 +21,7 @@ var LASTMOD = {
   "gates.html": "2026-10-22",
   "dragobete.html": "2026-10-23",
   "men.html": "2026-10-26",
-  "colinde.html": "2026-10-27",
+  "colinde.html": "2026-11-26",
   "martisor.html": "2026-10-28",
   "sanziene.html": "2026-10-29",
   "shepherds.html": "2026-10-30",
@@ -39,10 +39,11 @@ var LASTMOD = {
   "romance.html": "2026-11-25",
   "house.html": "2026-11-18",
   "borders.html": "2026-11-19",
-  "year.html": "2026-11-25",
-  "orthodoxy.html": "2026-11-25",
+  "year.html": "2026-11-26",
+  "orthodoxy.html": "2026-11-26",
   "north.html": "2026-11-24",
-  "andrei.html": "2026-11-25"
+  "andrei.html": "2026-11-26",
+  "nicolae.html": "2026-11-26"
 };
 
 function walk(dir, out) {
