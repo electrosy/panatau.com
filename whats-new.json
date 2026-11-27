@@ -2,6 +2,12 @@
   "note": "Newest first. Updated when the site grows. Prepend a dated group (or a line under today’s date). whats-new.html reads this file.",
   "groups": [
     {
+      "date": "27 Nov 2026",
+      "items": [
+        "A new page on <a href=\"unire.html\">1 Decembrie</a> — the flag, the bean pot, and two plates."
+      ]
+    },
+    {
       "date": "26 Nov 2026",
       "items": [
         "A new page on <a href=\"nicolae.html\">Moș Nicolae</a> — the boots, the switch, and two plates."
